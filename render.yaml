@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: mancala-game
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/rules
